@@ -1,0 +1,8 @@
+services:
+  bugaboo-eticket-production:
+    build:
+      context: ../../
+      dockerfile: docker/production/Dockerfile
+    image: bugaboo-eticket-production
+    ports:
+      - "3000:3000"

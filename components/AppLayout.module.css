@@ -1,0 +1,14 @@
+.aquabackgroud{
+    background: url('/ticket/aquaverse/images/background-mobile.jpg');
+    background-size: 180%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #f5f0fd;
+}
+
+  @media (min-width: 1200px) {
+    .aquabackgroud{
+        background: url('/ticket/aquaverse/images/background.jpg');
+        background-size: cover;
+    }   
+  }
