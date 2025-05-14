@@ -88,8 +88,7 @@ function PaymentForm() {
     const data = await res.json();
     console.log("payment", data);
     setMessage(data.message || data.error);
-    //for dev only
-    // if (otp === "1234") {
+
     if (data.message) {
       if (selectedMethod.id === supportedMethod.CREDIT_CARD) {
         router.push(`/payment/credit-card`);
